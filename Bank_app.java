@@ -14,7 +14,7 @@ public class Bank_app {
 		
 		String url="jdbc:mysql://localhost:3306/bank";
 		String un="root";
-		String pwd="Manju@12191";
+		String pwd="************";
 		Connection con=null;
 		PreparedStatement pstm1=null;
 		try {
