@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey form</title>
+        <style type="text/css">
+            body{
+                margin:auto;
+            }
+            h2{
+                text-align:center;
+            }
+            h2::first-letter{
+                color:red;
+                font-weight:bold;
+            }
+            legend{
+                font-weight:bold;
+                color:blue;
+            }
+            .f1 table td:first-child{
+                font-weight:bold;
+            }
+            input[type="submit"]{
+                margin-top:3px;
+                padding-top:3px;
+                display:block;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>COVID-19 SURVEY FORM</h2>
+        <form>
+            <fieldset class="f1"><legend>Personal Information</legend>
+                <table>
+                <tr>
+                    <td><lable>Name</lable></td>
+                    <td><input type="text" name="name"  placeholder="Full name" size="15" required></td>
+                </tr>
+                <tr>
+                    <td><lable>Email</lable></td>
+                    <td><input type="mail" name="mail" required placeholder="xyz@gmail.com" size="15"></td>
+                </tr>
+                <tr>
+                    <td><lable>Password</lable></td>
+                    <td><input type="password" name="pass" required size="15"></td>
+                </tr>
+                <tr>
+                    <td><lable>Mobile number</lable></td>
+                    <td><input type="telephone number" required name="mn" size="15" max length="10"> </td>
+                </tr>
+                <tr>
+                    <td><lable>DOB</lable></td>
+                    <td><input type="date" name="dob" required size="15" ></td>
+                </tr>
+                <tr>
+                    <td><lable></lable></td>
+                </tr>
+                <tr>
+                    <td><lable>Gender</lable></td>
+                    <td><input type="radio" name="gender" value="m">Male
+                        <input type="radio" name="gender" value="f">Female
+                        <input type="radio" name="gender" value="c">Custom
+                        </td>
+                </tr>
+                <tr>
+                    <td><lable>Address</lable></td>
+                    <td><input type="text" name="address" placeholder="Home address" size="30" required></td>
+                </tr>
+            </table>
+            </fieldset>
+            
+            <fieldset class="f1">
+                <legend>Professional details</legend>
+                <table>
+                    <tr>
+                        <td>Profession</td>
+                        <td><select name="profession">
+                            <option value="Student">Student</option>
+                            <option value="employee">Employee</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><lable>College name</lable>
+                        <td><input type="text" name="clg" placeholder="if student" size="15"></td>
+                    </tr>
+                    <tr>
+                        <td><lable>Office</lable></td>
+                        <td><input type="text" name="office" placeholder="if employee" size="15"></td>
+                    </tr>
+                    
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Covid Survey</legend>
+                <table>
+                    <tr>
+                        <td>Do you have awareness about <b>Corona virus</b>?</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="awarness" value="y">Yes</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="awarness" value="n" >No</td>
+                    </tr>
+                    <tr>
+                        <td>How many times frequently you <b>wash your hands daily</b>?</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="wash" value="on" >1-2 times</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="wash" value="off">3-4 times</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="wash" value="off">5-7 times</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="wash" value="off">8-10 times</td>
+                    </tr>
+                    <tr>
+                        <td>Do you wear <b>mask</b> reguraly?</td>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="mask" value="y" >Yes</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="mask" value="n" >No</td>
+                    </tr>
+                    <tr>
+                        <td>Do you have any corona <b>Symptoms</b>?</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="sympotms" value="y" >Yes</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="sympotms" value="n" >No</td>
+                    </tr>
+                    <tr>
+                        <td>If have what are they?</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="sym" value="on">Fever</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="sym" value="off">Cold</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="sym" value="off">Cough</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="sym" value="off">Headache</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="sym" value="off">Bodypains</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="sym" value="off">Breathing problem</td>
+                    </tr>
+                    <tr>
+                        <td>Are you <b>Vacinated </b>?</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="vaccinated" value="y" >Yes</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="vaccinated" value="n" >NO</td>
+                    </tr>
+                    <tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>If vacinated</td>
+                        <td>
+                            <select value="vaccine">
+                                <option value="cs">Covi-shield</option>
+                                <option value="cv">Co-Vaccine</option>
+                                <option value="cv">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <a href="new 1.html"><input type="submit"></a>
+        <script src="./j.js"></script>
+    </body>
+</html>
